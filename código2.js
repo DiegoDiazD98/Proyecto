@@ -1,0 +1,3 @@
+function calcularimpuestos(edad,ingresos){
+    
+}

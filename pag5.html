@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domotizar.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Contenedor de partículas en el fondo */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(120deg, #1e3a8a, #3b82f6);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+
+    <!-- Contenedor de partículas en el fondo -->
+    <div id="particles-js"></div>
+
+    <!-- Sección 1: Introducción -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-5" data-aos="fade-up">
+        <h1 class="text-4xl font-bold text-blue-600 mb-4">Cómo Domotizar tu Hogar</h1>
+        <p class="max-w-2xl">
+            La creación y domotización de las casas se puede lograr sin mucho dinero en el ámbito del control.
+            Para esto ocuparemos lo que es llamado <span class="font-bold">"Open Source"</span> o "código libre".
+        </p>
+        <div class="absolute bottom-10 animate-bounce">
+            <span class="text-white text-lg">⬇ Desliza hacia abajo ⬇</span>
+        </div>
+    </section>
+
+    <!-- Sección 2: Software Libre -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-5 bg-gray-800 text-white" data-aos="fade-up">
+        <h3 class="text-3xl font-semibold text-blue-400 mb-4">Software Libre</h3>
+        <p class="max-w-2xl">
+            Para empezar a domotizar nuestras casas, necesitaremos diversas herramientas, como <span class="font-bold">Home Assistant</span> y <span class="font-bold">Node-Red</span>.
+        </p>
+    </section>
+
+    <!-- Sección 3: Hardware -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-5 bg-gray-900 text-white" data-aos="fade-up">
+        <h3 class="text-3xl font-semibold text-blue-400 mb-4">Hardware</h3>
+        <p class="max-w-2xl mb-4">
+            Para iniciar en la automatización del hogar, necesitamos un servidor local. Algunas opciones son:
+        </p>
+        <ul class="list-disc pl-5 space-y-2">
+            <li class="text-lg">Raspberry Pi</li>
+            <li class="text-lg">Máquina Virtual</li>
+            <li class="text-lg">Computador Local</li>
+        </ul>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        AOS.init({ duration: 1000 }); // Activa las animaciones AOS
+
+        // Configuración de partículas en el fondo
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 100 }, // Cantidad de partículas
+                size: { value: 3 },
+                move: { speed: 1.5 },
+                line_linked: { enable: true, opacity: 0.3 },
+                color: { value: "#ffffff" }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

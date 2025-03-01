@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domotizar.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Efecto de resplandor en los títulos */
+        .glow {
+            text-shadow: 0px 0px 10px rgba(0, 115, 255, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+
+    <!-- Contenedor principal -->
+    <div class="max-w-3xl mx-auto p-5">
+        <h1 class="text-3xl font-bold text-blue-600 mb-4 glow" data-aos="fade-up">
+            Cómo Domotizar tu Hogar
+        </h1>
+
+        <p class="mb-4 transition-all duration-500 ease-in-out hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+            La creación y domotización de las casas se puede lograr sin mucho dinero en el ámbito del control.
+            Para esto ocuparemos lo que es llamado <span class="font-bold">"Open Source"</span> o "código libre".
+        </p>
+
+        <h3 class="text-2xl font-semibold text-blue-500 mb-2" data-aos="flip-left">
+            Software Libre
+        </h3>
+
+        <p class="mb-4" data-aos="zoom-in" data-aos-delay="200">
+            Para empezar a domotizar nuestras casas, necesitaremos diversas herramientas, como <span class="font-bold">Home Assistant</span> y <span class="font-bold">Node-Red</span>.
+        </p>
+
+        <h3 class="text-2xl font-semibold text-blue-500 mb-2" data-aos="slide-up">
+            Hardware
+        </h3>
+
+        <p class="mb-2" data-aos="fade-up" data-aos-delay="300">
+            Para iniciar en la automatización del hogar, necesitamos un servidor local. Algunas opciones son:
+        </p>
+
+        <ul class="list-disc pl-5 space-y-2" data-aos="fade-up" data-aos-delay="400">
+            <li class="text-lg">Raspberry Pi</li>
+            <li class="text-lg">Máquina Virtual</li>
+            <li class="text-lg">Computador Local</li>
+        </ul>
+    </div>
+
+    <!-- Botón flotante con animación de rebote -->
+    <button class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg animate-bounce">
+        ⬆️
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 }); // Duración de las animaciones aumentada a 1s
+    </script>
+</body>
+</html>
